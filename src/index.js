@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import CounterApp from "./CounterApp";
+import { BibliotecaApp } from "./BibliotecaApp";
 
-import "./index.css";
-import PrimeraApp from "./PrimeraApp";
+import "./styles/styles.scss";
 
-const divRoot = document.querySelector("#root");
-// ReactDOM.render(<PrimeraApp saludo = "DBlog" />, divRoot);
-ReactDOM.render(<CounterApp value={10} />, divRoot);
+ReactDOM.render(<BibliotecaApp />, document.getElementById("root"));

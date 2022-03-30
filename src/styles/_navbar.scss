@@ -1,0 +1,32 @@
+.navbar__principal {
+  background-color: $gris;
+  display: flex;
+  font-family: $fuente-principal;
+  justify-content: space-between;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  .navbar__nombre,
+  .navbar__nombre:visited,
+  .navbar__nombre:hover {
+    font-size: $font-lg;
+    text-decoration: none;
+  }
+
+  .link__container {
+    display: inline;
+    text-decoration: none;
+
+    .nav__item {
+      color: $negro;
+      margin: 0.5rem;
+      text-decoration: none;
+    }
+
+    .nav__link:hover {
+      color: $azul-palido;
+    }
+  }
+}
