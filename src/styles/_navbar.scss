@@ -1,32 +1,50 @@
-.navbar__principal {
-  background-color: $gris;
+.navbar {
+  z-index: 4;
+  position: relative;
+  align-items: center;
+  background-color: #fff;
   display: flex;
-  font-family: $fuente-principal;
+  flex-wrap: nowrap;
+  height: 5rem;
   justify-content: space-between;
-  padding: 50px;
-  text-align: center;
-  text-decoration: none;
+  padding: 1rem 2rem;
   width: 100%;
+  cursor: pointer;
 
-  .navbar__nombre,
-  .navbar__nombre:visited,
-  .navbar__nombre:hover {
-    font-size: $font-lg;
+  &__nombre,
+  &__nombre:visited,
+  &__nombre:hover {
     text-decoration: none;
   }
 
-  .link__container {
-    display: inline;
-    text-decoration: none;
+  &__nombre {
+    position: absolute;
+    transition: color 0.3s;
+    transform: translate(-50%, -50%);
+    color: $dark-blue;
+    font-weight: 700;
+    font-size: $font-lg;
+    top: 50%;
+    left: 50%;
+  }
 
-    .nav__item {
-      color: $negro;
-      margin: 0.5rem;
-      text-decoration: none;
-    }
+  &__menu {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
-    .nav__link:hover {
-      color: $azul-palido;
+  &__cuenta {
+    align-items: center;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .circulo {
+      height: 3rem;
+      width: 3rem;
+      background-color: $dark-blue;
+      border-radius: 50%;
+      display: inline-block;
+      margin-left: 1.5rem;
     }
   }
 }

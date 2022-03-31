@@ -12,10 +12,79 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: $fuente-principal;
   line-height: 1.3;
   overflow-x: hidden;
 
   &.noscroll {
     overflow: hidden;
   }
+}
+
+.seccion__contenedor{
+  margin-left: 2rem;
+  width: 100%;
+  height: 90vh;
+  h1{
+    color: $dark-blue;
+    font-family: $fuente-principal;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    letter-spacing: .2em;
+    font-weight: 300;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    }
+}
+
+.container{
+  margin-left: 16rem;
+}
+.flex{
+  display: flex;
+}
+.sombra {
+  box-shadow: 0 0.5rem 1rem #00000024 !important;
+}
+
+.buscador {      
+  border-radius: 0.188rem;
+  background-color: $light-gray;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  height: 1.75rem;
+  position: relative;
+
+  .sin__estilo {
+    background-color: transparent;
+    border: none;
+  }
+
+  .input,
+  .input::placeholder,
+  .input:focus {
+    outline: none;
+    color: $dark-gray;
+    font-size: 0.78rem;
+    margin-left: 0.5rem;
+  }
+
+
+  button {
+    cursor: pointer;
+    .icono {
+      display: flex;
+      align-items: center;
+      color: rgb(53, 58, 63);
+      text-align: center;
+      width: 0.78rem;
+      height: 0.78rem;
+    }
+  }
+}
+
+.separador{
+  border-top: 1px solid #f6f1e9;
 }

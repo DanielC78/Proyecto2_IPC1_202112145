@@ -1,42 +1,19 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import "../../styles/styles.scss";
+import { MenuAlt1Icon } from "@heroicons/react/solid";
+import { Search } from "./Search";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar__principal">
-      <Link className="navbar__nombre" to="/">
-        Biblioteca Virtual
+    <nav className="navbar sombra">
+      <MenuAlt1Icon className="navbar__menu" />
+      <Link className="navbar__nombre" to="/Home">
+        <span>Biblioteca Virtual</span>
       </Link>
-
-      <div className="link__container">
-        <div className="link__container">
-          <NavLink
-            className={({ isActive }) =>
-              "nav__item nav__link " + (isActive ? "active" : "")
-            }
-            to="/usuarios"
-          >
-            Usuarios
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              "nav__item nav__link " + (isActive ? "active" : "")
-            }
-            to="/libros"
-          >
-            Libros
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              "nav__item nav__link " + (isActive ? "active" : "")
-            }
-            to="/prestamos"
-          >
-            Préstamos
-          </NavLink>
-        </div>
+      <div className="navbar__cuenta">
+        <Search />
+        <span className="circulo"></span>
       </div>
     </nav>
   );

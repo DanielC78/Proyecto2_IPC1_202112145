@@ -1,0 +1,45 @@
+.sidebar {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  height: 100%;
+  width: 16rem;
+  padding-top: 0.725rem;
+  background-color: $very-light-gray;
+  z-index: 2;
+
+
+  &__link{
+    align-items: center;
+    border-radius: 0.3rem;
+    color: $dark-blue;
+    display: flex;
+    justify-content:flex-start;
+    margin: 2rem 1rem;
+    padding: 0 1rem;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    width: 90%;
+  }
+
+  .active{
+    color: $very-light-gray;
+    background-color: $dark-blue;
+
+  }
+
+  &__link:hover{
+    color: $very-light-gray;
+    background-color: $dark-blue;
+  }
+
+  .activo{
+    color: $very-light-gray;
+    background-color: $dark-blue;
+  }
+
+  .icono{
+    width: 40px;
+    margin-right: 1rem;
+  }
+}
